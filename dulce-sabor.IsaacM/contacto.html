@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dulce Sabor</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Dulce Sabor</h1>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="tienda.html">Tienda</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+            <h1>Formulario</h1>
+            <form action="/procesar" method="POST">
+              <!--Datos personales-->
+              <fieldset>
+                <label for="nombre">Nombre completo:</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ingrese su nombre"
+                  required
+                />
+                <br /><br />
+
+                <label for="correo">Correo electrónico:</label>
+                <input
+                  type="email"
+                  id="correo"
+                  name="correo"
+                  placeholder="Ingrese su correo"
+                  required
+                />
+                <br /><br />
+                <label>Tipo de pastel</label>
+                <select id="pastel" name="pastel">
+                <option value="cheesecake">CheeseCake</option>
+                <option value="chocolate" selected>Pastel de Chocolate</option>
+                <option value="platano">Pastel de Plátano</option>
+                <option value="red">RedVelvet</option>
+                <option value="tiramisu">Tiramisú</option>
+                <option value="pie">Pie de Manzana</option>
+                <option value="otro">otro</option>
+                </select>
+                <br /><br />
+
+                <label>Comentario:</label><br />
+                <textarea
+                 id="comentario"
+                 name="comentario"
+                 rows="4"
+                 cols="15"
+                 placeholder="Dime que opinas de mi pagina"
+                ></textarea>
+                <br /><br />
+                <label>Aceptación de términos:</label><br />
+                 <input type="checkbox" id="si" name="si" value="si"/>
+                 <label for="tecnologia">Si</label><br />
+                 <input type="checkbox" id="no" name="si" value="no" />
+                <label for="musica">No</label><br />
+            </fieldset>
+        </section>
+      </main>
+
+      <footer>
+        <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
+      </footer>
+    </div>
+  </body>
+</html>
