@@ -19,7 +19,7 @@
       <main>
         <section>
             <h1>Formulario</h1>
-            <form action="/procesar" method="POST">
+            <form action="/procesar" method="POST" class="formulario">
               <!--Datos personales-->
               <fieldset>
                 <label for="nombre">Nombre completo:</label>
@@ -51,15 +51,9 @@
                 <option value="pie">Pie de Manzana</option>
                 <option value="otro">otro</option>
                 </select>
-
-                <label>Aceptación de términos:</label><br />
-                 <input type="checkbox" id="si" name="si" value="si"/>
-                 <label for="tecnologia">Si</label><br />
-                 <input type="checkbox" id="no" name="si" value="no" />
-                <label for="musica">No</label><br />
-
                 <br /><br />
-                 <label>Comentario:</label><br />
+
+                <label>Comentario:</label><br />
                 <textarea
                  id="comentario"
                  name="comentario"
@@ -67,6 +61,12 @@
                  cols="15"
                  placeholder="Dime que opinas de mi pagina"
                 ></textarea>
+                <br /><br />
+                <label>Aceptación de términos:</label><br />
+                 <input type="checkbox" id="si" name="si" value="si"/>
+                 <label for="tecnologia">Si</label><br />
+                 <input type="checkbox" id="no" name="si" value="no" />
+                <label for="musica">No</label><br />
             </fieldset>
         </section>
       </main>
